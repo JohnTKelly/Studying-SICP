@@ -1,2 +1,2 @@
 # Studying-SICP
-My notes and and code I produce while studying Structure and Interpretation of Computer Programs
+Any notes and/or code I produce while studying Structure and Interpretation of Computer Programs.
