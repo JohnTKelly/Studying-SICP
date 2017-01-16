@@ -1,0 +1,6 @@
+(define (square x) (* x x))
+(define (sum-of-squares x y) (+ (square x) (square y)))
+(define (returnMaxOfTwo d e)
+  (cond ((> d e) d)
+        ((else e))))
+(define (SumTheSquaresOfTheTwoLargest a b c) ())
