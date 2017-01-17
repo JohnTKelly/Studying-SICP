@@ -1,6 +1,17 @@
-(define (square x) (* x x))
-(define (sum-of-squares x y) (+ (square x) (square y)))
-(define (returnMaxOfTwo d e)
+(define (max-of-two d e)
   (cond ((> d e) d)
-        ((else e))))
-(define (SumTheSquaresOfTheTwoLargest a b c) ())
+        (else e)))
+ 
+(define (max-of-three f g h)
+  (max-of-two f (max-of-two g h)))
+
+(define (square x) (* x x))
+
+(define (sum-of-squares x y) (+ (square x) (square y)))
+
+(define (SumTheSquaresOfTheTwoLargest a b c)
+  (cond ((= a (max-of-three a b c)) (sum-of-squares a (max-of-two b c)))
+        ((= b (max-of-three a b c)) (sum-of-squares b (max-of-two a c)))
+        (else (sum-of-squares c (max-of-two a b)))))
+
+(SumTheSquaresOfTheTwoLargest 3 3 3 )
